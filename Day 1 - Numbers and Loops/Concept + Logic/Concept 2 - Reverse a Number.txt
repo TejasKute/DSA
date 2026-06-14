@@ -1,0 +1,33 @@
+
+-- Concept 2: Reverse a Number
+
+Problem
+
+Input:
+1234
+
+Output:
+4321
+
+
+Logic
+
+1234 % 10 = 4
+123 % 10 = 3
+12 % 10 = 2
+1 % 10 = 1
+
+Result = 4321
+
+In Java
+int n = 1234;
+int reverse = 0;
+
+while (n > 0) {
+    int digit = n % 10;
+    reverse = reverse * 10 + digit;
+    n = n / 10;
+}
+
+System.out.println(reverse);
+

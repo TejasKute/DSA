@@ -1,0 +1,30 @@
+
+-- Concept 1: Count Digits in a Number
+
+Problem
+
+Given a number 12345, count how many digits it has.
+
+Logic
+
+12345
+
+12345 / 10 = 1234
+1234  / 10 = 123
+123   / 10 = 12
+12    / 10 = 1
+1     / 10 = 0
+
+Count = 5
+
+In Java 
+
+int n = 12345;
+int count = 0;
+
+while (n > 0) {
+    count++;
+    n = n / 10;
+}
+
+System.out.println(count);
